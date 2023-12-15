@@ -21,7 +21,7 @@ public class LoginSignupPanel extends JPanel {
 
         setLayout(new GridLayout(6, 1));
 
-        // Email and Password Panel
+        
         JPanel emailPasswordPanel = new JPanel(new GridLayout(1, 4));
         JLabel emailLabel = new JLabel("Email:");
         emailField = new JTextField();
@@ -35,7 +35,7 @@ public class LoginSignupPanel extends JPanel {
         emailPasswordPanel.add(passwordLabel);
         emailPasswordPanel.add(passwordField);
 
-        // Name Panel
+        
         JPanel namePanel = new JPanel(new GridLayout(1, 4));
         JLabel nameLabel = new JLabel("Name:");
         nameField = new JTextField();
@@ -43,7 +43,7 @@ public class LoginSignupPanel extends JPanel {
         namePanel.add(nameLabel);
         namePanel.add(nameField);
 
-        // Birth Date Panel
+        
         JPanel birthDatePanel = new JPanel(new GridLayout(1, 4));
         JLabel birthDateLabel = new JLabel("Birth Date (YYYY-MM-DD):");
         birthDateField = new JTextField();
@@ -51,7 +51,6 @@ public class LoginSignupPanel extends JPanel {
         birthDatePanel.add(birthDateLabel);
         birthDatePanel.add(birthDateField);
 
-        // Gender Panel
         JPanel genderPanel = new JPanel(new GridLayout(1, 4));
         JLabel genderLabel = new JLabel("Gender:");
         femaleCheckBox = new JCheckBox("Female");
@@ -59,7 +58,7 @@ public class LoginSignupPanel extends JPanel {
         genderPanel.add(genderLabel);
         genderPanel.add(femaleCheckBox);
 
-        // Buttons Panel
+
         JPanel buttonsPanel = new JPanel(new FlowLayout());
         JButton signUpButton = new JButton("Sign Up");
         signUpButton.setPreferredSize(new Dimension(100, 30));
