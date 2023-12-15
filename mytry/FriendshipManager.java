@@ -70,6 +70,6 @@ public class FriendshipManager {
     public enum FriendshipType {
         GENERAL,
         RESTRICTED
-        // Add more friendship types if needed
+       
     }
 }
