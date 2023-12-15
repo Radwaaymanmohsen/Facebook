@@ -12,7 +12,7 @@ class LikeManager {
     }
 
     public void like() {
-        liked = !liked; // Toggle the liked status
+        liked = !liked; 
         if (!liked) {
             likeCount++;
             liked = true;
