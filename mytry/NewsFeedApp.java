@@ -31,8 +31,8 @@ public class NewsFeedApp extends JFrame {
     }
 
     public enum PrivacyLevel {
-        GENERAL, // General privacy
-        RESTRICTED // Restricted privacy
+        GENERAL, 
+        RESTRICTED 
     }
 
     void createAndShowGUI() {
@@ -221,7 +221,7 @@ public class NewsFeedApp extends JFrame {
         if (!content.isEmpty()) {
             Post newPost = new Post(userEmail, content, getCurrentDate());
 
-            // Process tags
+          
             String[] tags = tagString.split("\\s*,\\s*");
             for (String tag : tags) {
                 if (!tag.isEmpty()) {
@@ -264,7 +264,7 @@ public class NewsFeedApp extends JFrame {
         for (Tag tag : tags) {
             tagsString.append(tag.getName()).append(",");
         }
-        // Remove the trailing comma
+        
         if (tagsString.length() > 0) {
             tagsString.setLength(tagsString.length() - 1);
         }
@@ -395,7 +395,7 @@ public class NewsFeedApp extends JFrame {
             for (Tag tag : tags) {
                 tagsString.append(tag.getName()).append(", ");
             }
-            // Remove the trailing comma and space
+           
             if (tagsString.length() > 2) {
                 tagsString.setLength(tagsString.length() - 2);
             }
